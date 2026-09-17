@@ -42,10 +42,10 @@ O uso de ferramentas de IA (como ChatGPT, GitHub Copilot ou Claude) no LaunchLab
 Instrução: Edite as seções abaixo preenchendo as evidências críticas da dupla até o prazo limite estipulado no ciclo semanal.
 ## 📂 Identificação
 
-* Curso: [Sistemas de Informação / ADS]
-* Membro 1 (Nome & GitHub): @[Username] - [Nome Completo]
-* Membro 2 (Nome & GitHub): @[Username] - [Nome Completo]
-* Embaixador Vinculado: @[Username] - [Nome do Monitor]
+* Curso: [Sistemas de Informação]
+* Membro 1 (Nome & GitHub): @[Kaishote] - [Italo Brito da Costa]
+* Membro 2 (Nome & GitHub): @[LucasPierreAraujo] - [Lucas Pierre Araujo]
+* Embaixador Vinculado: @[Lucas-d-Barbosa] - [Francisco Lucas dos Santos Barbosa]
 
 ## 🌍 Seção de Análise Crítica (Formação Geral)
 
