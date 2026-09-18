@@ -44,23 +44,28 @@ Instrução: Edite as seções abaixo preenchendo as evidências críticas da du
 
 * Curso: [Sistemas de Informação]
 * Membro 1 (Nome & GitHub): @[Kaishote] - [Italo Brito da Costa]
-* Membro 2 (Nome & GitHub): @[LucasPierreAraujo] - [Lucas Pierre Araujo]
+* Membro 2 (Nome & GitHub): @[LucasPierreAraujo] - [Pedro Lucas Araujo Pinho pierre]
 * Embaixador Vinculado: @[Lucas-d-Barbosa] - [Francisco Lucas dos Santos Barbosa]
 
 ## 🌍 Seção de Análise Crítica (Formação Geral)
 
 Com base no cenário proposto da semana, descreva qual o impacto humano, social, ético ou ambiental da tecnologia que sua célula colocou em produção. Como as decisões de código impactam o mundo físico e a vida do cidadão/empresa?
-💬 RESPOSTA DA CÉLULA: [Escreva sua análise crítica aqui]
+💬 RESPOSTA DA CÉLULA:  O sistema antigo usava rotas fixas, então o caminhão passava sempre nos mesmos bairros, independentemente de ter lixo para recolher. Nas cooperativas com menos volume, ele voltava quase vazio. Isso emite CO₂ e ocupa o motorista sem necessidade, enquanto outras centrais ficam sobrecarregadas esperando atendimento.
+A nossa solução define um limite mínimo de ocupação e avisa quando a carga fica abaixo dele. Assim o desperdício vira um número, e não uma impressão de quem está na operação.
 
 ## 💻 Seção de Engenharia e Governança de TI
 
 Justifique a decisão de arquitetura técnica adotada pela célula nesta entrega. Como as regras de negócio de ADS e as estruturas de dados de SI foram construidas para garantir que a solução seja escalável e de fácil manutenção?
-💬 RESPOSTA DA CÉLULA: [Escreva sua justificativa técnica aqui]
+💬 RESPOSTA DA CÉLULA: Separamos as regras de negócio do código que as executa. Os parâmetros ficam no dicionário METADADOS_COMPLIANCE, e a função apenas os consulta.
+
+Por isso o limite de 15 m³ não aparece escrito direto na função. Ele é calculado a partir da capacidade da frota vezes o percentual mínimo. Se a prefeitura mudar a meta, ou se a frota for trocada por caminhões maiores, basta alterar um número no dicionário e o resto do sistema se ajusta sozinho.
+
+Isso facilita a manutenção, porque existe um único lugar para mexer. E ajuda a governança, porque o Git guarda o histórico de quem mudou o parâmetro e quando.
 
 ## 🛠️ Diário de Bordo da Bancada
 
-* Maior travamento técnico superado pela dupla durante a semana: [Relate aqui]
-* Como a intervenção ou a Issue aberta para o Embaixador ajudou a destravar a célula: [Relate aqui]
+* Maior travamento técnico superado pela dupla durante a semana: O maior problema que tivemos foi organizar as regras de negócio dentro do código de uma forma que os dados pudessem ser analisados corretamente. Tivemos algumas dúvidas sobre como definir os limites de ocupação da frota e como fazer o sistema identificar quando havia muita ociosidade. Depois de testar algumas possibilidades, conseguimos ajustar a lógica e fazer a função apresentar os resultados esperados.
+* Como a intervenção ou a Issue aberta para o Embaixador ajudou a destravar a célula: A intervenção ajudou principalmente a tirar algumas dúvidas sobre como deveríamos estruturar essa parte do projeto e quais informações seriam importantes para a análise. Com as orientações recebidas, conseguimos entender melhor o que precisava ser feito e dar continuidade ao desenvolvimento sem precisar mudar a ideia principal que já tínhamos definido.
 
 
 
